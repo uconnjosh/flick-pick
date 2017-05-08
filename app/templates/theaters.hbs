@@ -1,8 +1,9 @@
 <ul class='theater-list'>
-  {{#each model as |theater|}}
-    <li class='theater-item'>{{theater.upName}}</li>
+  {{#each model.theaters as |theater|}}
+    <li {{action 'selectTheater' theater on='click'}} class='theater-item {{selected-theater theater selectedTheater}}'>{{theater.upName}}</li>
   {{/each}}
 
   {{#if selectedTheater}}
+    {{theater-showtimes showtimes=selectedTheater.showtimes}}
   {{/if}}
 </ul>

@@ -6,6 +6,12 @@
   float: left;
   padding: 10px;
   font-size: 133%;
+  cursor: pointer;
+}
+
+.active-theater {
+  color: #FF4500;
+  border-bottom: solid;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");/*!
