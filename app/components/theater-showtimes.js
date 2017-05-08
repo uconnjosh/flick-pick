@@ -16,5 +16,17 @@ export default Ember.Component.extend({
 
       return movObj;
     })
-  })
+  }),
+  filteredMovies: Ember.computed('showtimes', 'movieFilter', 'movies', function() {
+    if (this.get('movieFilter')) {
+      let movieFilter = this.get('movieFilter');
+      return this.get('movies').filter(function(movie) {
+        let nameValue = movie.movie.get('title');
+       return nameValue.indexOf(movieFilter) >= 0;
+      });
+    } else {
+      return this.get('movies');
+    }
+  }),
+  movieFilter: null
 });

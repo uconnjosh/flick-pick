@@ -1,12 +1,15 @@
-<ul class='theater-list'>
-  {{#each model.theaters as |theater|}}
-    <li {{action 'selectTheater' theater on='click'}} class='theater-item {{selected-theater theater selectedTheater}}'>{{theater.upName}}</li>
-  {{/each}}
-</ul>
+<div class='movie-form'>
+  {{input type='text' value=movieFilter class='movie-search' placeholder='Search movies...'}}
+  <ul class='theater-list'>
+    {{#each model.theaters as |theater|}}
+      <li {{action 'selectTheater' theater on='click'}} class='theater-item {{selected-theater theater selectedTheater}}'>{{theater.upName}}</li>
+    {{/each}}
+  </ul>
 
-<div class='movie-list'>
-  {{#if selectedTheater}}
-    {{theater-showtimes showtimes=selectedTheater.showtimes}}
-  {{/if}}
+  <div class='movie-list'>
+    {{#if selectedTheater}}
+      {{theater-showtimes showtimes=selectedTheater.showtimes movieFilter=movieFilter}}
+    {{/if}}
+  </div>
 </div>
 
