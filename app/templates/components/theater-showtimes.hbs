@@ -1,6 +1,6 @@
 {{#each movies as |movie|}}
-  <img src={{movie.movie.poster}} />
-  <h4>{{movie.movie.title}}</h4>
-  <h4>{{movie.showtimes}}</h4>
+  <div class='movie-item'>
+    {{movie-preview poster=movie.movie.poster title=movie.movie.title rating=movie.movie.rating showtimes=movie.showtimes}}
+  </div>
 {{/each}}
 
