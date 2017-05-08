@@ -11,6 +11,7 @@ You will need the following things properly installed on your computer.
 * [Node.js](https://nodejs.org/) (with NPM)
 * [Bower](https://bower.io/)
 * [Ember CLI](https://ember-cli.com/)
+ --> install ember: `npm install -g ember-cli`
 * [PhantomJS](http://phantomjs.org/)
 
 ## Installation
