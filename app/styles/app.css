@@ -1,5 +1,5 @@
 .movie-form {
- max-width: 760px;
+ max-width: 553px;
  padding: 75px;
  margin: 0 auto;
 }
@@ -15,6 +15,7 @@
 .info {
   vertical-align: middle;
   display: inline-block;
+  max-width: 260px
 }
 
 .theater-list {
@@ -49,7 +50,7 @@
 }
 
 .poster {
-  width: 198px;
+  width: 73px;
   height: auto;
 }
 
