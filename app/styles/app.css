@@ -17,6 +17,7 @@
 
 .theater-list {
   list-style: none;
+  padding-left: 0px;
   margin-top: 12px;
 }
 
@@ -25,7 +26,6 @@
   padding: 10px;
   font-size: 133%;
   cursor: pointer;
-  /*flex-direction: row;*/
 }
 
 .movie-list {
@@ -78,7 +78,7 @@
     display: block;
     width: 100%;
     background-color: white;
-    margin: 4px;
+    margin-bottom: 8px;
   }
 
   .active-theater {
