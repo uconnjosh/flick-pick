@@ -3,8 +3,7 @@ import moment from 'moment';
 
 export default Ember.Component.extend({
   displayShowtimes: Ember.computed('showtimes', function() {
-  	return this.sortedShowtimes()
-    this.get('')
+    return this.sortedShowtimes()
   }),
   passedShowtimes: Ember.computed('showtimes', function() {
     let showtimes = this.sortedShowtimes()
@@ -16,7 +15,7 @@ export default Ember.Component.extend({
 
     return filtered.map(function(fShowtime) {
       return fShowtime._i
-    })
+    }).join(' ')
   }),
   futureShowtimes: Ember.computed('showtimes', function() {
     let showtimes = this.sortedShowtimes()
@@ -28,7 +27,7 @@ export default Ember.Component.extend({
 
     return filtered.map(function(fShowtime) {
       return fShowtime._i
-    })
+    }).join(' ')
   }),
   momentShowtimes: function() {
     return this.get('showtimes').map(function(showtime) {
