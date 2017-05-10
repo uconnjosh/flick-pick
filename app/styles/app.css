@@ -1,6 +1,7 @@
 .movie-form {
  max-width: 760px;
  padding: 75px;
+ margin: 0 auto;
 }
 .movie-title {
   display: inline;
@@ -8,6 +9,7 @@
 
 .movie-info {
   display: inline-block;
+  text-align: center;
 }
 
 .info {
@@ -47,10 +49,8 @@
 }
 
 .poster {
-  width: auto;
+  width: 198px;
   height: auto;
-  max-width: 227px;
-  max-height: 314px;
 }
 
 .container-fluid {
@@ -69,6 +69,7 @@
 
 @media screen and (max-width: 550px) {
   .poster {
+    width: 348px;
     display: block;
     margin: auto;
     margin-bottom: 15px;
@@ -89,6 +90,16 @@
 
   .movie-list {
     margin-top: 194px;
+  }
+
+  .movie-item {
+    padding: 18px 0px 0px 0px;
+  }
+
+  .movie-info {
+    display: block;
+    margin: 0 auto;
+    width: 99%;
   }
 
   .movie-form {
