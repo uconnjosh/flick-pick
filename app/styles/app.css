@@ -68,6 +68,10 @@
   color: gray;
 }
 
+.flick-container {
+  min-height: 800px;
+}
+
 @media screen and (max-width: 550px) {
   .poster {
     width: 348px;
