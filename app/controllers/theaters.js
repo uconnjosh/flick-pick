@@ -10,7 +10,7 @@ export default Controller.extend({
     return this.get('selectedTheater.showtimes')
   }),
   actions: {
-    selectTheater: function(theater) {
+    selectTheater(theater) {
       this.set('selectedTheater', theater);
     }
   }
